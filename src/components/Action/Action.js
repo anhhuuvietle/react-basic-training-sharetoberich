@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Action.css';
-import Image from '../../assets/img/dice-6.png';
 
 class Action extends Component {
     render() {
@@ -12,13 +11,13 @@ class Action extends Component {
                         NEW GAME
                 </div>
                 <div className="img-dice">
-                    <img src={Image} alt="dice"/>
+                    { this.props.img? <img src={this.props.img} alt="dice"/> : null }
                 </div>
-                <div className="btn action__roll-dice">
+                <div className="btn action__roll-dice" onClick={this.props.roll}>
                     <i className="ion-ios-loop"></i>
                     ROLL DICE
                 </div>
-                <div className="btn action__hold">
+                <div className="btn action__hold" onClick={this.props.hold}>
                     <i className="ion-ios-download-outline"></i>
                     HOLD
                 </div>
