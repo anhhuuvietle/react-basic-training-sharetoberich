@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+body {
+  background: url('./assets/img/back.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 5vh 60px;
+}
+
+.app {
+  height: 600px;
+  width: 1000px;
+  margin: auto;
+  background: green;
+  display: flex;
+  position: relative;
+}

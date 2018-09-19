@@ -1,0 +1,49 @@
+.player-pane {
+    width: 50%;
+    background: white;
+    border-left: 1px solid;
+    padding: 100px;
+}
+
+.player-name {
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.player-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-top: 30px;
+    margin-bottom: 130px;
+}
+
+.current-score {
+    width: 100px;
+    height: 100px;
+    background: #EB4D4D;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.current-score div {
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+.active {
+    background: #e8cece;
+}
+.active .player-name::after {
+    content: '\2022';
+    font-size: 47px;
+    position: absolute;
+    color: green;
+    top: -4px;
+    right: 10px;
+}
